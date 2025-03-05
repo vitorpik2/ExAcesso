@@ -6,10 +6,6 @@ public class Produto {
     private double preco;
 
    
-    //public produto(){}
-    
-    
-    
     public Produto(String nome) {
 
         this.nome = nome;
@@ -52,7 +48,6 @@ public class Produto {
     public void setPreco(double preco){
         this.preco = preco;
     }
-    
     
     
 }

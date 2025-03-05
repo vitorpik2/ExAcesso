@@ -1,21 +1,17 @@
-
 package javaex10;
 
-
 public class Carro {
-    
-      private String marca;
+
+    private String marca;
     private String modelo;
     public int ano;
 
-   
     public Carro(String marca, String modelo, int ano) {
         this.marca = marca;
         this.modelo = modelo;
-        setAno(ano); // Usa o setter para validar o ano
+        setAno(ano); 
     }
 
-   
     public String getMarca() {
         return marca;
     }
@@ -24,7 +20,6 @@ public class Carro {
         return modelo;
     }
 
-   
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -42,9 +37,8 @@ public class Carro {
         }
     }
 
-    
     public void exibirDados() {
         System.out.println("Carro: " + marca + " " + modelo + ", Ano: " + ano);
     }
-    
+
 }

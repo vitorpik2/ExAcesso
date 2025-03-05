@@ -1,16 +1,15 @@
 package javaex3;
 
 public class ContaBancaria {
-  public String titular;
-    private double saldo;  
 
-   
+    public String titular;
+    private double saldo;
+
     public ContaBancaria(String titular, double saldoInicial) {
         this.titular = titular;
         this.saldo = saldoInicial;
     }
 
-  
     public void depositar(double valor) {
         if (valor > 0) {
             saldo += valor;
@@ -20,7 +19,6 @@ public class ContaBancaria {
         }
     }
 
-  
     public void sacar(double valor) {
         if (valor > 0 && saldo >= valor) {
             saldo -= valor;
@@ -32,12 +30,10 @@ public class ContaBancaria {
         }
     }
 
-
     public double getSaldo() {
         return saldo;
     }
 
-   
     public void exibirDados() {
         System.out.println("Titular: " + titular);
         System.out.println("Saldo: R$ " + saldo);
